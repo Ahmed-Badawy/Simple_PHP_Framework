@@ -25,3 +25,11 @@
 <br><br>
 
 	<?php include_once('messages.php') ?>
+
+<hr>
+
+<a href="<?=Base_URL?>csv/index" class='btn btn-default col-sm-6'>View All</a>
+<a href="<?=Base_URL?>csv/json" class='btn btn-default col-sm-6'>View JSON</a>
+
+<hr>
+<br>

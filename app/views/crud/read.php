@@ -1,7 +1,7 @@
 <h1>CRUD System (Read)</h1>
 <hr>
 
-<form action='<?=Base_URL?>csv/edit_csv/<?=$index?>' method='POST'>
+<form action='<?=Base_URL?>csv/update/<?=$index?>' method='POST'>
 
 <table class='table table-hover table-striped'>
 

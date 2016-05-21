@@ -2,9 +2,9 @@
 		Options -MultiViews
 
 
-# this means all requests go to url (simple-mvc2/public)
+# this means all requests go to url (Basic-MVC/public)
 		RewriteEngine On
-		RewriteBase /simple-mvc2/public/
+		RewriteBase /Basic-MVC/public/
 
 
 # Redirect Rules (don't understand)

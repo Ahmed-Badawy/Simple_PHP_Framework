@@ -1,7 +1,9 @@
 <?php
 
 $website_name = "localhost/";
-$website_dir = "simple-mvc2/public/";
+$website_name = "ahmed-badawy.com/";
+
+$website_dir = "Basic-MVC/public/";
 
 
 define('Base_URL','http://'.$website_name.$website_dir);
