@@ -1,5 +1,7 @@
 <h1>CRUD System</h1>
 <hr>
+
+
 <table class='table table-hover table-striped '>
 
 <thead>
@@ -13,20 +15,20 @@
 </thead>
 
 <tbody>
-	<?php foreach($data['crud_data'] as $key=>$line):?>
+	<?php foreach($crud_data as $key=>$line):?>
 		<tr>
 			<td><?=$key?></td>
 			<td><?=$line[0]?></td>
 			<td><?=$line[1]?></td>
 			<td><?=$line[2]?></td>
 			<td>
-				<a href="delete" class='btn btn-danger btn-sm'>Delete</a>
-				<a href="delete" class='btn btn-primary btn-sm'>Edit</a>
+				<a href="<?=Base_URL?>csv/delete_from_csv/<?=$key?>" class='btn btn-danger btn-sm'>Delete</a>
+				<a href="<?=Base_URL?>csv/read_csv/<?=$key?>" class='btn btn-primary btn-sm'>Edit</a>
 			</td>
 		</tr>
 	<?php endforeach; ?>
 
-	<form action='add_to_csv' method='POST'>
+	<form action='<?=Base_URL?>csv/add_to_csv' method='POST'>
 		<tr>
 			<td><label for="">Add New</label></td>
 			<td><input name='name' class='form-control' placeholder='Name'/></td>

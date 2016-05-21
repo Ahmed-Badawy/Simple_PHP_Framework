@@ -21,3 +21,7 @@
 
 	</head>
 	<body class='container'>
+
+<br><br>
+
+	<?php include_once('messages.php') ?>

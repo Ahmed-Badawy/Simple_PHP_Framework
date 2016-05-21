@@ -11,13 +11,14 @@ class CSV_service extends Service{
 
 	public function read_csv_file($file){
 		$rows = file($file);
+		$rec = [];
 		foreach($rows as $row){
 			$rec[] = str_getcsv($row);
 		}
 		return $rec;
 	}
 
-	public function save_csv_file($file,$fields){
+	public function save_csv_file($file,$list){
 		$fp = fopen($file, 'w+');
 		foreach ($list as $fields) {
 			fputcsv($fp, $fields);
