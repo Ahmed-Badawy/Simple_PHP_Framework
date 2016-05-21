@@ -1,0 +1,17 @@
+# this allowes you to call (index.php) with just (index)
+		Options -MultiViews
+
+
+# this means all requests go to url (simple-mvc2/public)
+		RewriteEngine On
+		RewriteBase /simple-mvc2/public/
+
+
+# Redirect Rules (don't understand)
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-l
+
+
+#	this means redirect every thing
+		RewriteRule ^(.+)$ index.php?core_url=$1 [QSA,L]
